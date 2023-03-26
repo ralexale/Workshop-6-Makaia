@@ -1,5 +1,5 @@
 # Workshop-6-Makaia
-proyecto de pagina de hamburguesa makaia
+proyecto de página de hamburguesa makaia
 
 https://vercel.com/glgaviria64/worshop6
 
