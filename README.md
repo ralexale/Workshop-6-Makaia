@@ -13,5 +13,6 @@ Trabajamos el viernes 24 de Marzo en clase. Se arregló la lógica del código c
 La compañera Adelia le hizo unos cambios a los estilos añadiendo fondo pero decidimos ponerle creatividad e irnos por bobsponja.  
 Gloria añadió un estilo a los botones
 Angie los terminó con el nuevo conceto de Bob esponja
+Gloria hizo el despliegue de la página y completó el Read.me
 
 Nos comunicamos por medio del chat.
