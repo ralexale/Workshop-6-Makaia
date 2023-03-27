@@ -16,7 +16,7 @@ Requerimientos técnicos:
 
 
 
-https://vercel.com/glgaviria64/worshop6
+https://workshop-6-makaia.vercel.app/
 
 ![image](https://user-images.githubusercontent.com/120149936/227809450-45a4233b-ae7d-43ea-a5b7-cff634e18adf.png)
 
