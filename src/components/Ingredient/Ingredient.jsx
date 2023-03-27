@@ -5,9 +5,6 @@ const Ingredient = (props) => {
         case "bread-top":
             return (
                 <div className="bread-top">
-                    <div className="seeds1"></div>
-                    <div className="seeds2"></div>
-                    <div className="seeds1"></div>
                 </div>
             );
         default:

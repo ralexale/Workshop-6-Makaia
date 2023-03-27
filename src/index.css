@@ -1,3 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Bellefair&family=Epilogue:wght@500;700&family=Oswald:wght@700&family=Press+Start+2P&family=Roboto:wght@300;400;500&family=Rubik+Iso&family=Tilt+Neon&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes ingredients-appear {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", cursive;
+}
+
+body {
+    background-position: center;
+    background-image: url("../bobBgg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgBob {
+    position: fixed;
+    z-index: -1;
+    top: -10px;
+    left: 0;
+    height: 113vh;
+    object-fit: cover;
+}
+
+.receipt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+.receipt h1,
+h2 {
+    color: #000000;
+}
+
+.bob {
+    height: 200px;
+    width: 200px;
+}
+
+.container {
+    width: 100vw;
+}
+
+.containerIngredients {
+    display: flex;
+    flex-grow: wrap;
+}
+
+.containerAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+.containerAll h2,
+h3 {
+    color: #000000;
+    font-weight: 900;
+}
+
+.btnConfirm {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9a800;
+    color: #ffffff;
+    border-right: 5px solid #8a0709;
+    border-bottom: 5px solid #8a0709;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.burger {
+    width: 100%;
+    align-self: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.534);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bread-bottom {
+    height: 70px;
+    width: 250px;
+    background: url("https://i.ibb.co/GJJrLgm/pan-olor-dulce-aislado-sobre-fondo-blanco-219717-3750-removebg-preview.png")
+        no-repeat;
+    border-radius: 10px;
+    /* transform: rotate(180deg); */
+    margin: 0 auto;
+    background-size: 130%;
+    background-position: top;
+    background-position-y: -130px;
+}
+
+.bread-top {
+    height: 100px;
+    width: 250px;
+    background: url("https://i.ibb.co/GJJrLgm/pan-olor-dulce-aislado-sobre-fondo-blanco-219717-3750-removebg-preview.png")
+        no-repeat;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    background-size: 132%;
+    background-position: top;
+    background-position-y: -20px;
+}
+
+.meat {
+    height: 30px;
+    width: 280px;
+    background: url("https://i.ibb.co/QbQz3hB/hamburger-removebg-preview.png");
+    margin: 0 auto;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    animation: ingredients-appear 0.3s ease-out forwards;
+    opacity: 0;
+}
+
+.cheese {
+    height: 20px;
+    width: 280px;
+    margin: 0 auto;
+    background: url("https://i.ibb.co/3yqN82z/images-removebg-preview.png")
+        no-repeat;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    animation: ingredients-appear 0.3s ease-out forwards;
+    opacity: 0;
+}
+
+.salad {
+    height: 20px;
+    width: 280px;
+    margin: 0 auto;
+    background: url(https://i.ibb.co/Y8nWwH7/lechuga.png) no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    animation: ingredients-appear 0.3s ease-out forwards;
+    opacity: 0;
+}
+
+.bacon {
+    height: 20px;
+    width: 280px;
+    background: url("https://i.ibb.co/Rp6TW96/3fb24c4d7525d16f60f8ec2b46aeb25582802791-Deli-Meats-209235-06-removebg-preview.png")
+        no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: ingredients-appear 0.3s ease-out forwards;
+    opacity: 0;
+}
+
+.control-panel {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.builder {
+    display: flex;
+    justify-content: center;
+}
+.confirmBtnss {
+    display: flex;
+}
+.button {
+    margin: 20px;
+    padding: 20px;
+    font-size: 1em;
+    color: #494949;
+    font-weight: 600;
+    width: fit-content;
+    line-height: 0.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9a800;
+    color: #ffffff;
+    border-right: 5px solid #8a0709;
+    border-bottom: 5px solid #8a0709;
+}
+
+.button:hover {
+    color: #ffffff;
+    background: #008853;
+    border-color: #013c2d;
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+}
+
+.btnConfirm:hover {
+    color: #ffffff;
+    background: #008853;
+    border-color: #013c2d;
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    body {
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 426px) {
+    body {
+        height: 100%;
+    }
+
+    .confirmBtnss {
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+}

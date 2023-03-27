@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Ingredient from "../Ingredient/Ingredient";
 
 const Burger = (props) => {
@@ -11,11 +12,11 @@ const Burger = (props) => {
     ));
 
     return (
-        <div className="burger">
+        <motion.div className="burger">
             <Ingredient id="bread-top" />
             {burgerIngredients}
             <Ingredient id="bread-bottom" />
-        </div>
+        </motion.div>
     );
 };
 

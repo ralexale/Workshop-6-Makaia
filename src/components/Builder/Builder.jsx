@@ -10,10 +10,6 @@ const confirmBurger = (price) => ({
     price,
 });
 
-/**
- * Ingredients: ["bacon", "salad", "cheese", "meat"]
- */
-
 const prices = {
     bacon: 10,
     salad: 2,
@@ -57,23 +53,39 @@ class Builder extends Component {
     render() {
         return (
             <div className="container">
-                <ControlPanel
-                    onAdd={(x) => {
-                        this.addIngredient(x);
-                    }}
-                />
-                <h3># Burgers added: {this.props.burgersArray.length}</h3>
-                <h2>
-                    Burger {this.props.burgersArray.length + 1} : ${" "}
-                    {this.getPrice()}
-                </h2>
-                <div className="button" onClick={() => this.handleConfirm()}>
-                    Confirm
+                <div className="containerAll ">
+                    <ControlPanel
+                        onAdd={(x) => {
+                            this.addIngredient(x);
+                        }}
+                    />
+
+                    <article className="bg-cartel bg-center bg-fill bg-no-repeat  flex  flex-col gap-4 items-center p-14 relative">
+                        <h3>Burgers added: {this.props.burgersArray.length}</h3>
+                        <h2 className="mb-12">
+                            Burger {this.props.burgersArray.length + 1} : ${" "}
+                            {this.getPrice()}
+                        </h2>
+                        <img
+                            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWI0OGI0YWY2NzlhNDNkZjZiZWM1MzIzNzU3N2E0OWVkZTZiYTY1NCZjdD1z/qU181i0UyaVAp6uJtv/giphy.gif"
+                            alt="bob"
+                            className="h-20 absolute top-[110px]"
+                        />
+                    </article>
+
+                    <div className="confirmBtnss">
+                        <div
+                            className="button btnRed"
+                            onClick={() => this.handleConfirm()}
+                        >
+                            Confirm
+                        </div>
+                        <Link to="/receipt">
+                            <div className="button btnRed">See receipt</div>
+                        </Link>
+                    </div>
                 </div>
-                <Link to="/receipt">
-                    <div className="button">See receipt</div>
-                </Link>
-                <div className="builder">
+                <div>
                     <Burger
                         ingredients={this.state.ingredients}
                         onIngredientClick={(index) =>
