@@ -16,7 +16,7 @@ Requerimientos técnicos:
 
 
 
-https://workshop-6-makaia.vercel.app/
+workshop-6-makaia.vercel.app
 
 ![bob](https://user-images.githubusercontent.com/91914016/227965461-3e09fe5d-dd14-486a-9e91-f16b2af929ef.png)
 
