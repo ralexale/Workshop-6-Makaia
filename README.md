@@ -18,9 +18,9 @@ Requerimientos técnicos:
 
 https://workshop-6-makaia.vercel.app/
 
-![image](https://user-images.githubusercontent.com/120149936/227809450-45a4233b-ae7d-43ea-a5b7-cff634e18adf.png)
+![bob](https://user-images.githubusercontent.com/91914016/227965461-3e09fe5d-dd14-486a-9e91-f16b2af929ef.png)
 
-![image](https://user-images.githubusercontent.com/120149936/227810260-f7f6f530-8de8-4ed6-aeaf-b5616beb646d.png)
+![bob2](https://user-images.githubusercontent.com/91914016/227965480-42d6db3c-a1be-45da-a809-6095bb3035b6.png)
 
 
 
