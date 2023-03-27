@@ -1,5 +1,20 @@
 # Workshop-6-Makaia
 Proyecto de página de hamburguesa makaia
+Aplicación de React- redux síncrono
+
+Requerimientos funcionales:
+1. Crear hamburguesas agregándole algunos de los siguientes ingredientes de manera opcional: 
+bacon, salad, cheese y meat.
+2. Mostrar el recibo donde se relacione la cantidad de hamburguesas construidas, precio unitario y 
+total.
+
+Requerimientos técnicos:
+1. Refactorizar y actualizar el código suministrado.
+2. Implementar flujo de redux síncrono.
+3. Implementar React Router DOM
+4. Implementar los diseños y estilos ya establecidos en el aplicativo
+
+
 
 https://vercel.com/glgaviria64/worshop6
 
