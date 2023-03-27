@@ -30,7 +30,7 @@ Gloria añadió un estilo a los botones
 Angie los terminó con el nuevo conceto de Bob esponja
 Se utilizó el framework Tailwind para los estilos. React and Vite. 
 
-Para ejecutar la ágina por lo tanto se usa el comando npm run dev
+Para ejecutar la página por lo tanto se usa el comando npm run dev
 
 Gloria hizo el despliegue de la página y completó el Read.me
 
